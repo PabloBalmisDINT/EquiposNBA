@@ -9,6 +9,24 @@
         Height="370"
         Width="800"
         Icon="/Assets/basketball.ico">
+
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Width"
+                    Value="150"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize"
+                    Value="30"></Setter>
+            <Setter Property="TextWrapping"
+                    Value="Wrap"></Setter>
+            <Setter Property="FontWeight"
+                    Value="Bold"></Setter>
+            <Setter Property="TextAlignment"
+                    Value="Center"></Setter>
+        </Style>
+    </Window.Resources>
+    
     <StackPanel Orientation="Vertical">
         <Border BorderBrush="Black"
                 BorderThickness="3px"
@@ -23,21 +41,13 @@
                         <GradientStop Color="#FF9237FF" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock FontSize="30"
-                           TextWrapping="Wrap"
-                           FontWeight="Bold"
-                           TextAlignment="Center">Los Ángles Lakers</TextBlock>
+                <TextBlock>Los Ángles Lakers</TextBlock>
                 <WrapPanel>
-                    <Image Source="/Assets/14_lakers.png"
-                           Width="150"/>
-                    <Image Source="/Assets/23_lakers.png"
-                           Width="150" />
-                    <Image Source="/Assets/3_lakers.png"
-                           Width="150" />
-                    <Image Source="/Assets/39_lakers.png"
-                           Width="150" />
-                    <Image Source="/Assets/9_lakers.png"
-                           Width="150" />
+                    <Image Source="/Assets/14_lakers.png"/>
+                    <Image Source="/Assets/23_lakers.png"/>
+                    <Image Source="/Assets/3_lakers.png"/>
+                    <Image Source="/Assets/39_lakers.png"/>
+                    <Image Source="/Assets/9_lakers.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
@@ -55,22 +65,13 @@
                                       Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock FontSize="30"
-                           FontWeight="Bold"
-                           TextAlignment="Center"
-                           TextWrapping="Wrap"
-                           Foreground="White">Miami Heat</TextBlock>
+                <TextBlock Foreground="White">Miami Heat</TextBlock>
                 <WrapPanel Orientation="Horizontal">
-                    <Image Source="/Assets/13_heat.png"
-                           Width="150" />
-                    <Image Source="/Assets/14_heat.png"
-                           Width="150" />
-                    <Image Source="/Assets/22_heat.png"
-                           Width="150" />
-                    <Image Source="/Assets/7_heat.png"
-                           Width="150" />
-                    <Image Source="/Assets/99_heat.png"
-                           Width="150" />
+                    <Image Source="/Assets/13_heat.png"/>
+                    <Image Source="/Assets/14_heat.png"/>
+                    <Image Source="/Assets/22_heat.png"/>
+                    <Image Source="/Assets/7_heat.png"/>
+                    <Image Source="/Assets/99_heat.png"/>
                 </WrapPanel>
             </StackPanel>
         </Border>
